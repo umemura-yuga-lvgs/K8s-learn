@@ -14,11 +14,6 @@ kubectl version --client
 1. Preferences -> KubernetesでKubernetesの設定ページを開く。
 2. "Enable Kubernetes"の横のチェックボックスにチェックを入れる。
 
-## 1.3 サンプルコードのダウンロード
-```sh
-git clone 
-```
-
 # 2. Pod
 ## 2.1 Podの作成
 以下のコマンドを実行してください
