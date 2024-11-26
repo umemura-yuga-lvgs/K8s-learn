@@ -1,0 +1,28 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-named-port-pod-80
+  labels:
+    app: sample-app
+spec:
+  containers:
+  - name: nginx-container
+    image: amsy810/echo-nginx:v2.0
+    ports:
+    - name: http # ポートに名前をつける
+      containerPort: 80
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-named-port-pod-81
+  labels:
+    app: sample-app
+spec:
+  containers:
+  - name: nginx-container
+    image: amsy810/echo-nginx:v2.0
+    ports:
+    - name: http # ポートに名前をつける
+      containerPort: 81
